@@ -4,15 +4,26 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "dev": "webpack --mode development",
     "start": "node server/server.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha server/**/*.test.js"
   },
   "engines": {
-    "node" : "10.15.3"
+    "node": "10.15.3"
   },
   "author": "Thivagar S",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.17.1"
+    "axios": "^0.19.0",
+    "express": "^4.17.1",
+    "hbs": "^4.0.4",
+    "moment": "^2.24.0",
+    "socket.io": "^2.2.0"
+  },
+  "devDependencies": {
+    "expect": "^1.20.2",
+    "mocha": "^3.0.2",
+    "webpack": "^4.37.0",
+    "webpack-cli": "^3.3.6"
   }
 }
